@@ -1,0 +1,67 @@
+.networkNew
+  padding: 40px 0 
+  &__list
+    margin-top: 30px 
+  &__item
+    background: #fff
+    border-radius: 4px 
+    margin-bottom: 10px 
+    padding: 20px 30px 
+    display: grid 
+    grid-template-columns: max-content 1fr max-content
+    align-items: center
+    justify-content: space-between
+    &:last-of-type
+      margin-bottom: 0
+  &__item-userContent
+    display: grid 
+    grid-template-columns: max-content 1fr 
+    align-items: center
+    grid-column-gap: 15px 
+  &__item-img
+    width: 52px 
+    height: 52px 
+  &__item-userName
+    +got_bold 
+    line-height: 13px 
+    &_proff
+      display: block 
+      margin-top: 5px 
+      +got_reg
+      font-size: 12px 
+      line-height: 15px  
+  &__item-userConnect
+    margin-top: 3px 
+    +got_light 
+    font-size: 10px 
+    line-height: 15px
+    color: #0275B1  
+  &__item-message
+    margin-left: 50px 
+    border-left: 2px solid #0275B1
+    padding-left: 15px 
+    font-size: 10px 
+    line-height: 15px 
+    color: rgba(24, 24, 24, 0.6)
+    padding-right: 50px 
+    max-height: 45px 
+    overflow: hidden
+  &__item-buttons
+    display: grid 
+    grid-template-columns: max-content max-content
+    align-items: center
+    grid-column-gap: 15px 
+  &__item-btn
+    border: 1px solid #E7E7E7
+    padding: 11px 18px 10px 17px 
+    line-height: 11px 
+    color: #b7b7b7
+    text-transform: uppercase
+    transition: .3s linear 
+    &:focus
+      border: 1px solid #E7E7E7
+    &:hover
+      background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+      color: #fff
+
+

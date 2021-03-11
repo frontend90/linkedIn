@@ -1,0 +1,164 @@
+.other-modal
+  position: fixed 
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(#f2f2f2,.2)
+  backdrop-filter: blur(1px)
+  z-index: 9999
+  display: none 
+  overflow-y: auto
+  &__wrap 
+    background: #fff
+    padding: 0 20px 20px  
+    box-shadow: 0px 10px 40px rgba(89, 120, 150, 0.06)
+    width: 370px 
+    position: absolute
+    top: 0
+    right: 0
+  &__close 
+    position: absolute
+    top: 0
+    left: -24%
+    height: 80px 
+    display: grid 
+    grid-template-rows: repeat(2, max-content)
+    align-content: center 
+    padding: 0 25px 
+    text-transform: uppercase
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+    cursor: pointer 
+    background: #fff
+    box-shadow: 0px 10px 40px rgba(89, 120, 150, 0.06)
+  &__close-item 
+    display: grid 
+    margin-left: 4px  
+    justify-items: center
+    width: 24px 
+    height: 24px
+    position: relative
+    transform: rotate(45deg)
+    &::before
+      content: ''
+      position: absolute
+      width: 2px 
+      height: 12px 
+      background: #181818
+      transform: rotate(90deg) 
+    &::after 
+      content: ''
+      position: absolute
+      width: 2px 
+      height: 12px 
+      background: #181818
+      transform: rotate(180deg) 
+  &__top
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    justify-content: space-between
+    height: 80px 
+    border-bottom: 1px solid #f4f4f4
+  &__top-title
+    +got_med 
+  &__top-img
+    display: block 
+    width: 24px 
+    height: 24px 
+    object-fit: cover 
+    margin: auto 
+  &__top-link
+    display: block 
+    margin-top: 5px
+    font-size: 12px 
+    text-transform: uppercase
+    line-height: 11px 
+    color: #0275B1 
+  &__nav
+    padding: 20px 0 
+    border-bottom: 1px solid #f4f4f4
+  &__nav-btn
+    padding: 10px 0 10px 20px 
+    background: #0275B1
+    width: 100%
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    &:hover
+      background: #0275B1
+    &_img 
+      display: inline-block
+      width: 24px 
+      height: 24px 
+      object-fit: cover 
+    &_text
+      margin-left: 20px 
+    &_text-small
+      display: block 
+      +got_light 
+      font-size: 10px 
+      line-height: 15px 
+  &__nav-links
+    margin-top: 20px 
+    display: grid 
+    grid-template-columns: repeat(2, 1fr)
+    grid-row-gap: 10px 
+    grid-column-gap: 10px 
+  &__nav-link
+    display: inline-grid
+    grid-template-columns: repeat(2, max-content)
+    align-items: center 
+    border: 1px solid #f4f4f4
+    border-radius: 6px 
+    text-transform: uppercase
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+    color: #181818
+    grid-column-gap: 15px 
+    padding: 12px 15px 
+  &__nav-img
+    width: 100%
+    height: 100%
+    display: inline-block
+    object-fit: cover 
+  &__services
+    padding: 20px 0 40px 0 
+    border-bottom: 1px solid #f4f4f4
+  &__services-title
+    +got_med 
+    margin-bottom: 15px 
+  &__services-link
+    display: block 
+    +got_med 
+    font-size: 12px 
+    line-height: 18px 
+    color: #181818
+    border: 1px solid #f4f4f4
+    border-radius: 6px 
+    margin-top: 10px 
+    padding: 15px 20px 
+    &:first-of-type
+      margin-top: 0
+    &_small
+      display: block 
+      +got_light 
+      font-size: 10px 
+      line-height: 15px 
+  &__btn
+    margin-top: 20px 
+    background: linear-gradient(180deg, #D8C281 0%, #AC9B69 100%)
+    &:hover
+      background: linear-gradient(180deg, #D8C281 0%, #AC9B69 100%)
+  &__btn-small
+    display: block
+    +got_light 
+    font-size: 10px 
+    line-height: 15px 
+
+
+
+

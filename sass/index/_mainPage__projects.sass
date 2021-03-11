@@ -1,0 +1,48 @@
+.mainPage
+  &__projects
+    margin: 20px 0 
+    background: #fff
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5)
+    border-radius: 4px
+    padding: 30px 
+  &__projects-title
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 15px 
+    &_small
+      +got_reg 
+      font-size: 18px 
+      line-height: 17px 
+      color: #747474
+  &__projects-wrap
+    margin-top: 25px 
+    display: grid 
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content))
+    justify-content: space-between
+    grid-column-gap: 10px 
+    grid-row-gap: 20px 
+  &__projects-itemImg
+    display: inline-block
+    width: 100%
+    object-fit: cover 
+  &__projects-itemContent
+    margin-top: 15px 
+  &__projects-itemLink
+    display: inline-block
+    +got_med 
+    color: #181818
+  &__projects-itemText
+    margin-top: 5px 
+    +got_light 
+    font-size: 12px 
+    line-height: 15px 
+  &__projects-link
+    display: grid 
+    margin-top: 25px 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 5px 
+    &_number
+      display: inline-block
+

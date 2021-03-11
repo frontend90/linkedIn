@@ -1,0 +1,54 @@
+.networkNavbar
+  &__main
+    background: #FFFFFF
+    border-radius: 4px
+  &__main-item
+    border-bottom: 1px solid #f4f4f4
+    cursor: pointer
+    transition: .3s linear 
+    &:last-of-type
+      border: none 
+    &.active 
+      border-left: 10px solid #0275B1
+    &.active .networkNavbar__main-name
+      opacity: .6
+    &.active .networkNavbar__main-number
+      color: #ED8F03
+      padding-right: 20px 
+      &::before
+        display: block 
+  &__main-wrap
+    padding: 17px 30px 
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    justify-content: space-between
+  &__main-name
+    display: grid 
+    grid-template-columns: max-content 1fr 
+    align-items: center
+    text-transform: uppercase
+    grid-column-gap: 10px 
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+  &__main-svg
+    width: 16px 
+    height: 16px  
+  &__main-number
+    +got_bold 
+    font-size: 12px 
+    line-height: 11px 
+    position: relative
+    transition: .3s linear 
+    &::before
+      content: ''
+      display: none 
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: 0
+      width: 9px 
+      height: 9px 
+      border-radius: 50%
+      background: linear-gradient(215.49deg, #FFB75E 5.4%, #ED8F03 93.45%)

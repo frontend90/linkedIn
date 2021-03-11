@@ -1,0 +1,202 @@
+.chatPage
+  background: #fff
+  border-radius: 4px 
+  &__header
+    display: grid 
+    grid-template-columns: max-content max-content
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid #f4f4f4
+    padding: 20px 0
+    box-shadow: 0 50px 50px 0px rgba(#fff,.7)
+    position: relative
+    z-index: 2
+  &__header-info
+    display: grid 
+    grid-template-columns: max-content max-content
+    align-items: center
+    grid-column-gap: 15px 
+    padding-left: 30px 
+  &_header-name
+    text-transform: uppercase
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+  &_header-nameLink
+    display: inline-block
+    color: #0275B1
+  &_header-online
+    text-transform: uppercase
+    display: grid 
+    grid-template-columns: max-content max-content
+    align-items: center
+    grid-column-gap: 5px 
+    +got_light 
+    font-size: 12px 
+    line-height: 11px 
+    opacity: .6
+  &_header-onlineDate
+    display: inline-block
+    +got_reg 
+    opacity: 1
+  &__header-media
+    display: grid 
+    grid-template-columns: max-content 1fr 
+    align-items: center
+    grid-column-gap: 10px 
+    padding-right: 30px 
+    &_number
+      display: inline-block
+  &__header-mediaLink
+    display: inline-block
+    width: 24px 
+    height: 24px 
+  &__header-mediaImg
+    width: 100%
+    height: 100%
+  &__header-mediaContent
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+    text-transform: uppercase
+  &__body
+    padding: 0 30px 22.5px 47px
+    max-height: 515px 
+    overflow-y: auto 
+    border-bottom: 1px solid #f4f4f4
+    display: none 
+    &.active 
+      display: block 
+  &__userMessage
+    display: grid 
+    grid-template-columns: 1fr 
+    justify-content: end 
+    max-width: 80%
+    margin: 7.5px 0 7.5px auto
+  &__userMessage-wrap
+    display: inline-grid 
+    grid-template-columns: 1fr max-content
+    align-items: start 
+    grid-column-gap: 15px 
+  &__userMessage-textWrap
+    display: grid 
+    grid-template-columns: 1fr
+    grid-row-gap: 10px 
+    justify-items: end 
+  &__userMessage-text
+    background: #E9F0F8
+    border-radius: 4px 
+    padding: 13px 20px 12px 20px 
+  &__userMessage-img
+    width: 46px 
+    height: 46px 
+  &__userMessage-date
+    margin-top: -5px 
+    font-size: 10px 
+    line-height: 15px 
+    text-transform: uppercase
+    opacity: .6
+  &__body-date
+    display: grid
+    grid-template-columns: 1fr max-content 1fr 
+    align-items: center
+    justify-content: center
+    padding: 22.5px 0 
+  &__body-dateLine
+    width: 100%
+    height: 1px 
+    background: #f4f4f4
+  &__body-dateText
+    padding: 0 30px 
+    text-transform: uppercase
+    +got_light 
+    font-size: 12px 
+    line-height: 11px 
+  &__myMessage
+    display: inline-grid 
+    grid-template-columns: 1fr 
+    justify-items: start
+    margin: 7.5px 0 7.5px 0  
+    max-width: 80%
+  &__myMessage-text
+    padding: 13px 20px 12px 20px  
+    background: #0275B1
+    border-top-left-radius: 4px 
+    border-top-right-radius: 4px
+    border-bottom-right-radius: 4px 
+    color: #fff
+    position: relative
+    &::before
+      content: ''
+      width: 0
+      height: 0
+      position: absolute
+      right: 100%
+      bottom: 0  
+      border-top: 17px solid transparent
+      border-right: 17px solid #0275B1
+      border-bottom: -17px solid transparent
+  &__myMessage-date
+    margin-top: 8px 
+    font-size: 10px 
+    line-height: 15px 
+    opacity: .6
+    text-transform: uppercase
+    position: relative
+    padding-left: 5px 
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: -17px 
+      background: url(../images/chat/chatPage/check.svg) left no-repeat
+      background-size: cover 
+      background-position: center 
+      width: 17px 
+      height: 12px 
+  &__footer-form
+    width: 100%
+    display: grid 
+    grid-template-columns: 1fr max-content
+    align-items: center
+    padding: 20px 30px 
+    grid-column-gap: 30px 
+  &__form-blockInput
+    width: 100%
+    height: 100%
+  &__form-input
+    width: 100%
+    height: 100%
+    font-size: 14px 
+    line-height: 17px 
+    &::placeholder 
+      color: rgba(24, 24, 24, 0.2)
+      font-size: 18px 
+  &__form-nav
+    display: grid 
+    grid-template-columns: max-content max-content
+    align-items: center
+    grid-column-gap: 30px 
+  &__form-navInput
+    display: none 
+  &__form-navLabel
+    width: 24px 
+    height: 24px 
+    cursor: pointer
+  &__form-navImg
+    width: 100%
+    height: 100%
+  &__form-btn
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+    padding: 9px 9px 7px 7px 
+    line-height: 0
+    font-size: 0
+    &:hover
+      background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+    &:focus 
+      background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+  &__form-btnImg
+    width: 16px 
+    height: 16px 
+

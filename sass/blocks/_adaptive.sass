@@ -1,0 +1,284 @@
+@media screen and ( max-width: 1435px )
+  .logo
+    &__header
+      position: static
+      border-right: 1px solid #F4F4F4
+  .other 
+    order: 3
+    position: static
+  .menu 
+    order: 3
+    padding: 0 25px 
+    border-left: 1px solid #F4F4F4
+  .nav 
+    &__wrap 
+      padding-right: 0
+      padding-left: 0
+      min-width: 100%
+      grid-template-columns: max-content 1fr max-content max-content
+  .burger 
+    display: grid 
+    align-items: center
+    justify-content: flex-end 
+    width: 30px 
+    height: 20px
+    position: relative 
+    z-index: 9998
+    &.active 
+      position: fixed
+      right: 15px 
+      top: 40px 
+    &.active .burger__item 
+      display: none 
+    &.active::before 
+      transform: rotate(45deg)
+      width: 25px 
+      top: 0
+      background: #ffffff
+    &.active::after 
+      width: 25px 
+      top: 0
+      transform: rotate(-45deg)
+      background: #ffffff
+    &__item  
+      background: #181818
+      height: 3px 
+      width: 20px 
+      transition: .3s linear 
+    &::before
+      content: ''
+      position: absolute
+      width: 30px 
+      height: 3px 
+      background: #181818
+      top: 0
+      transition: .3s linear 
+    &::after
+      content: ''
+      position: absolute
+      width: 30px 
+      height: 3px 
+      background: #181818
+      bottom: 0
+      transition: .3s linear  
+  .main-menu 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(#181818,.9)
+    z-index: 9997
+    display: none 
+    text-align: center
+    padding-top: 100px 
+    overflow-y: auto
+    align-items: center
+    &__link 
+      position: relative
+      display: block
+      color: #ffffff
+      font-size: 16px 
+      &::before
+        display: none 
+    &__svg
+      display: none 
+    &.show 
+      display: grid
+      grid-template-columns: 1fr 
+  .img-counter
+    display: inline-block
+    position: absolute
+    &__number 
+      right: -100px
+      top: -2px
+  .other 
+    border-right: none 
+    justify-content: center
+    color: #fff
+    &__item 
+      border-color: #fff
+      &::before
+        border-color: #fff
+      &::after
+        border-color: #fff
+@media screen and ( max-width: 1210px )
+  .mainPage
+    &__wrap 
+      grid-template-columns: 1fr 
+      justify-content: center
+  .navbar
+    margin-top: 40px
+  .network
+    &__navbar
+      margin: 0 0 40px 0 
+  .chat
+    &__navbar
+      margin: 0 0 40px 0 
+  .notices
+    &__navbar
+      margin: 0 0 40px 0 
+  .networkNav
+    justify-content: center
+  .jobsPostBtn
+    display: grid
+    justify-content: center
+@media screen and ( max-width: 1100px )
+  .footer 
+    &__wrap 
+      grid-template-columns: repeat(2, max-content)
+      justify-content: space-around
+      grid-row-gap: 50px 
+@media screen and ( max-width: 880px )
+  .search 
+    border-top: 1px solid #f4f4f4
+    border-bottom: 1px solid #f4f4f4
+    border-right: none 
+    padding-left: 0
+    justify-content: center 
+    &__input  
+      color: #fff
+@media screen and ( max-width: 750px )
+  .footer 
+    &__wrap 
+      grid-template-columns: 1fr 
+      justify-items: center
+      text-align: center
+  .mainPage
+    &__header-bottom
+      grid-template-columns: 1fr 
+      justify-items: center
+    &__header-content
+      padding-bottom: 0
+    &__header-text
+      text-align: center
+    &__header-buttons
+      justify-content: center
+    &__nav
+      grid-template-columns: 1fr 
+  .networkNew
+    &__item 
+      grid-template-columns: 1fr 
+      padding: 20px 
+      grid-row-gap: 30px 
+    &__item-message
+      margin: 0 50px 
+      padding-right: 0
+    &__item-buttons
+      justify-content: center
+@media screen and ( max-width: 650px )
+  .chatPage
+    &__header 
+      grid-template-columns: 1fr 
+      grid-row-gap: 30px 
+    &__header-media
+      padding-left: 30px 
+      padding-right: 0
+@media screen and ( max-width: 555px )
+  .nav 
+    &__wrap 
+      grid-template-columns: repeat(2, max-content)
+      justify-content: space-between
+  .logo
+    &__header
+      border-right: none 
+  .user-info 
+    border-bottom: 1px solid #f4f4f4
+    padding: 0
+    justify-content: center
+    height: 100%
+    border-right: none 
+    &__name 
+      color: #fff
+      &_small 
+        color: #cecece
+    &__views 
+      color: #cecece
+  .networkRecent
+    &__list 
+      grid-template-columns: 1fr 
+  .chatPage 
+    &__body 
+      padding: 0 15px 22.5px 32px
+@media screen and ( max-width: 530px )
+  .mainPage 
+    &__header-userInfo
+      grid-template-columns: 1fr 
+      grid-row-gap: 10px 
+      justify-items: center
+    &__header-buttons
+      grid-template-columns: max-content
+      grid-row-gap: 20px 
+  .feedPost
+    &__form 
+      grid-template-columns: 1fr 
+      justify-items: center
+      grid-row-gap: 30px 
+    &__form-userNav
+      justify-self: center
+  .feedComment
+    &__main-block
+      grid-template-columns: 1fr 
+      grid-row-gap: 30px 
+    &__main-blockContent
+      grid-template-columns: 1fr 
+    &__main-blockImages 
+      display: none 
+@media screen and ( max-width: 500px )
+  .other-modal
+    &__wrap 
+      width: 100%
+    &__close 
+      position: static
+      justify-content: center
+      padding: 0
+  .footer 
+    &__nav-wrap 
+      grid-template-columns: 1fr 
+      grid-row-gap: 30px 
+  .jobsOffers
+    &__item 
+      grid-template-columns: max-content 1fr 
+      grid-row-gap: 20px 
+      padding: 20px 
+    &__item-btn
+      grid-column: 2/3
+      justify-self: left 
+  .jobsSearch
+    &__form 
+      grid-template-columns: 1fr 
+      grid-row-gap: 30px
+  .chatPage
+    &__userMessage
+      max-width: 100%
+    &__userMessage-img
+      width: 26px 
+      height: 26px 
+    &__myMessage 
+      max-width: 100%
+      margin: 7.5px 40px 7.5px 0  
+    &__footer-form
+      grid-template-columns: 1fr 
+      grid-row-gap: 20px 
+@media screen and ( max-width: 450px )
+  .feedComment
+    &__header
+      grid-template-columns: 1fr 
+      grid-row-gap: 20px 
+      padding: 15px
+    &__main 
+      padding: 15px 
+    &__footer 
+      padding: 0 15px 
+    &__footer-share 
+      border: none 
+  .chatPage
+    &__header-info
+      grid-template-columns: 1fr 
+      grid-row-gap: 10px 
+@media screen and ( max-width: 400px )
+  .mainPage
+    &__experience-itemImg
+      display: none 
+    &__education-img
+      display: none 

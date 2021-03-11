@@ -1,0 +1,55 @@
+.mainPage
+  &__experience
+    margin: 20px 0 
+    background: #fff
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5)
+    border-radius: 4px
+    padding: 30px 
+  &__experienceTitle
+    margin-bottom: 25px 
+  &__experience-item
+    display: grid 
+    grid-template-columns: max-content 1fr 
+    grid-column-gap: 15px 
+    &:nth-child(2)
+      padding-bottom: 20px 
+      border-bottom: 1px solid #f4f4f4
+    &:nth-child(3)
+      padding-top: 20px  
+  &__experience-itemImg
+    width: 100%
+    object-fit: cover 
+    display: inline-block
+  &__experience-itemTitle
+    +got_med 
+  &__experience-itemLink
+    display: inline-block
+    color: #181818
+  &__experience-itemBrand
+    margin-top: 10px 
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 10px 
+    font-size: 12px
+    line-height: 15px  
+    &_small
+      display: inline-block
+      +got_light 
+  &__experience-itemDate
+    margin-top: 5px
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 10px 
+    +got_light 
+    font-size: 12px 
+    line-height: 15px  
+    &_small
+      display: inline-block
+      +got_med 
+      color: #0275B1
+  &__experience-itemText
+    margin-top: 10px 
+    font-size: 12px 
+    line-height: 15px 

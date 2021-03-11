@@ -1,0 +1,153 @@
+.mainPage 
+  &__header
+    background: #fff
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5)
+    border-radius: 4px
+  &__header-top 
+    background: url(../images/index/mainPage__header/bg.png) no-repeat 
+    width: 100%
+    height: 180px 
+    background-size: cover 
+    background-position: center 
+    padding: 20px 30px 0 
+  &__header-topWrap
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    justify-content: space-between
+  &__header-topNav
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 10px 
+  &__header-topForm
+    width: 100%
+  &__header-topInput
+    display: none 
+  &__header-topLabel  
+    cursor: pointer
+    padding: 10px 
+    line-height: 0
+    background: rgba(255, 255, 255, 0.9)
+    box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05)
+    border-radius: 4px
+  &__header-topImg
+    width: 16px 
+    height: 16px 
+    object-fit: cover 
+  &__header-topBtn
+    padding: 10px 
+    background: rgba(255, 255, 255, 0.9)
+    box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05)
+    border-radius: 4px
+    line-height: 11px 
+    &:hover
+      background: rgba(255, 255, 255, 0.9)
+    &_edit
+      text-transform: uppercase
+      font-size: 12px 
+      display: inline-grid 
+      grid-template-columns: repeat(2, max-content)
+      align-items: center
+      grid-column-gap: 10px 
+    &_more
+      display: inline-grid 
+      grid-template-columns: max-content
+      align-items: center
+      justify-content: center
+      padding: 17px
+    &_item
+      background: #181818
+      width: 2px 
+      height: 2px 
+      border-radius: 50%
+      display: inline-block
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 5px 
+        left: 0
+        width: 100%
+        height: 100%
+        background: #181818
+      &::after 
+        content: ''
+        position: absolute
+        top: -5px 
+        left: 0
+        width: 100%
+        height: 100%
+        background: #181818
+  &__header-bottom
+    padding: 0 30px 30px 25px  
+    display: grid 
+    grid-template-columns: max-content 1fr 
+    grid-column-gap: 25px 
+    align-items: center
+  &__header-avatar
+    margin-top: -30px 
+    width: 170px 
+    height: 170px 
+  &__header-avatarImg
+    width: 100%
+    height: 100%
+    object-fit: cover 
+  &__header-content
+    padding-bottom: 5px 
+    padding-top: 25px 
+  &__header-userInfo
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    justify-content: space-between
+  &__header-name
+    +got_bold 
+    font-size: 18px 
+    line-height: 17px 
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 10px 
+  &__header-nameImg
+    display: inline-block
+    width: 16px 
+    height: 16px 
+    object-fit: cover 
+  &__header-local
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 10px 
+    font-size: 12px 
+    line-height: 18px 
+  &__header-localImg
+    width: 16px 
+    height: 16px 
+    display: inline-block
+  &__header-text
+    margin-top: 15px 
+  &__header-buttons
+    margin-top: 15px
+    display: grid
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 15px  
+  &__header-btn
+    text-transform: uppercase
+    border: 1px solid #0275B1
+    line-height: 11px 
+    color: #0275B1
+    transition: .3s linear 
+    &:hover
+      background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+      color: #fff
+    &:focus
+      border: 1px solid #0275B1
+    &_info 
+      padding: 10px 37px 
+    &_follow
+      padding: 10px 20px 
+
+
+

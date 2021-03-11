@@ -1,0 +1,63 @@
+.jobsOffers
+  padding: 40px 0 0 0
+  &__title
+    display: grid 
+    grid-template-columns: 1fr max-content 1fr 
+    align-items: center
+    justify-content: center
+    margin-bottom: 40px 
+  &__title-line
+    width: 100%
+    height: 1px 
+    background: #e7e7e7
+  &__title-text
+    padding: 0 45px 
+    text-transform: uppercase
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+  &__item
+    background: #fff
+    border-radius: 4px 
+    box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5)
+    margin-bottom: 10px 
+    padding: 20px 30px 
+    display: grid 
+    grid-template-columns: max-content 1fr max-content
+    grid-column-gap: 15px 
+    overflow: hidden
+    &:last-of-type
+      margin-bottom: 0
+  &__item-img
+    width: 54px 
+    height: 54px 
+  &__item-name
+    +got_med 
+  &__item-brand
+    display: grid 
+    grid-template-columns: max-content max-content
+    align-items: center
+    grid-column-gap: 10px 
+    margin-top: 2px 
+    font-size: 10px 
+    line-height: 15px 
+    &_small
+      +got_light 
+  &__item-text
+    margin-top: 10px 
+    font-size: 10px 
+    line-height: 15px 
+    max-width: 405px 
+    background: linear-gradient(to bottom, #181818  0%, rgba(24, 24, 24, 0)  100%)
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    max-height: 45px 
+  &__item-btn
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+    padding: 11px 27px 10px 26px 
+    line-height: 11px 
+    text-transform: uppercase
+    align-self: center
+    &:hover
+      background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+      

@@ -1,0 +1,53 @@
+.jobsArticles
+  margin-top: 20px 
+  background: #FCFDFD
+  border-radius: 4px
+  padding: 25px 30px 30px 30px 
+  &__title
+    text-transform: uppercase
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+    padding-bottom: 20px 
+    border-bottom: 1px solid #f4f4f4
+  &__content
+    margin-top: 20px 
+  &__item
+    display: grid 
+    grid-template-columns: max-content 1fr 
+    align-items: center
+    grid-column-gap: 15px 
+    margin-bottom: 20px 
+    overflow: hidden
+    &:last-of-type
+      margin-bottom: 0
+  &__item-img
+    width: 80px 
+    height: 52px 
+  &__item-name
+    +got_bold 
+    line-height: 18px 
+    &_small
+      display: inline-block
+      margin-top: 5px 
+      +got_reg 
+      font-size: 10px 
+      line-height: 15px 
+  &__item-nameLink
+    display: inline-block
+    color: #181818
+    background: linear-gradient(to right, #181818 85%, rgba(24, 24, 24, 0) 100%)
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    white-space: nowrap
+    max-width: 135px 
+    &:hover
+      background: linear-gradient(to right, #181818 85%, rgba(24, 24, 24, 0) 100%)
+      background-clip: text
+      -webkit-text-fill-color: transparent
+    &:focus 
+      background: linear-gradient(to right, #181818 85%, rgba(24, 24, 24, 0) 100%)
+      background-clip: text
+      -webkit-text-fill-color: transparent
+
+

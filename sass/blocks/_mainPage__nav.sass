@@ -1,0 +1,39 @@
+.mainPage
+  &__nav
+    padding-top: 20px
+    display: grid 
+    grid-template-columns: repeat(auto-fit, minmax(240px, max-content))
+    align-items: end
+    border-bottom: 1px solid #e7e7e7
+  &__nav-btn
+    border-left: 1px solid #E7E7E7
+    border-top: 1px solid #E7E7E7
+    border-right: 1px solid #E7E7E7
+    border-radius: 0
+    text-transform: uppercase
+    line-height: 11px 
+    color: #181818
+    padding: 15px 0 13px 0 
+    text-align: center
+    transition: .3s linear 
+    &:focus
+      border-left: 1px solid #E7E7E7
+      border-top: 1px solid #E7E7E7
+      border-right: 1px solid #E7E7E7
+    &:first-of-type
+      border-radius: 4px 0px 0px 0px
+    &:last-of-type
+      border-radius: 0px 4px 0px 0px
+    &.active 
+      background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+      border-radius: 4px 4px 0px 0px
+      color: #fff
+      height: 50px 
+    &_wrap
+      display: grid 
+      grid-template-columns: repeat(2, max-content)
+      align-items: center
+      justify-content: center
+      grid-column-gap: 5px 
+    &_number
+      display: inline-block

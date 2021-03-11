@@ -1,0 +1,57 @@
+.feedSort
+  padding: 35px 0 15px 0 
+  &__wrap
+    display: grid 
+    grid-template-columns: 1fr max-content max-content 1fr 
+    align-items: center
+    justify-content: center
+    grid-column-gap: 5px 
+  &__line 
+    white-space: no-wrap
+    overflow: hidden
+    background: #e7e7e7
+    height: 1px 
+    width: 100%
+  &__title
+    text-transform: uppercase
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+    padding-left: 15px 
+  &__form
+    width: 100%
+    display: grid 
+    padding-right: 35px 
+    & .ui-selectmenu-button.ui-button
+      width: 70px
+      display: grid 
+      grid-template-columns: repeat(2, max-content)
+      align-items: center
+      justify-content: space-between
+    & .ui-selectmenu-text
+      order: 1
+      text-transform: uppercase
+      color: #0275B1
+      margin-right: 5px 
+      font-size: 12px
+      line-height: 11px 
+    & .ui-button
+      background: transparent 
+      +got_med 
+      font-size: 12px 
+      line-height: 11px
+      padding: 10px 0 
+      margin: 0
+      border: none 
+      &:focus
+        outline: none 
+    & .ui-button .ui-icon
+      background: url(../images/feed/feedSort/arrow.svg) no-repeat 
+      background-position: center
+      width: 14px 
+      height: 14px 
+      order: 2
+      transition: transform .3s linear 
+    & .ui-selectmenu-button-open
+      & .ui-selectmenu-icon.ui-icon
+        transform: rotate(180deg)

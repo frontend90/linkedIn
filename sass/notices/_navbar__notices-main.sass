@@ -1,0 +1,21 @@
+.navbar
+  &__notices-main
+    background: #fff
+    border-radius: 4px 
+    margin-bottom: 20px 
+  &__notices-item
+    cursor: pointer
+    transition: .3s linear
+    &.active 
+      border-left: 10px solid #0275B1
+      border-top-left-radius: 4px 
+    &.active .navbar__notices-itemWrap
+      opacity: .6
+    &:first-of-type
+      border-bottom: 1px solid #f4f4f4
+  &__notices-itemWrap
+    padding: 20px 30px
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+    text-transform: uppercase 

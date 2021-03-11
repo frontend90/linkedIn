@@ -1,0 +1,52 @@
+.feedNavbar
+  &__groups
+    background: #FCFDFD
+    border-radius: 4px
+    padding: 25px 30px 30px 30px 
+  &__groups-title
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    justify-content: space-between
+    text-transform: uppercase
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+    padding-bottom: 20px 
+    border-bottom: 1px solid #f4f4f4
+  &__groups-titleLink
+    color: #0275B1
+  &__groups-content
+    margin-top: 20px 
+  &__groups-contentItem
+    background: #FFFFFF
+    border: 1px solid #F4F4F4
+    border-radius: 6px
+    margin-bottom: 10px 
+    display: grid 
+    grid-template-columns: max-content 1fr 
+    align-items: center
+    grid-column-gap: 15px 
+    padding: 15px
+    &:last-of-type
+      margin-bottom: 0
+  &__groups-contentImg
+    width: 52px 
+    height: 52px  
+  &__groups-contentLink
+    +got_bold 
+    line-height: 18px 
+    color: #181818
+  &__groups-link
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    align-items: center
+    grid-column-gap: 5px 
+    margin-top: 25px
+    text-transform: uppercase
+    +got_med 
+    font-size: 12px 
+    line-height: 11px 
+    color: #0275B1 
+    &_small
+      display: inline-block
