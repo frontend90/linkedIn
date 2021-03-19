@@ -153,7 +153,7 @@ $('.mainPage__nav-btn').click(function () {
   $(".mainPage__nav-btn").not(this).removeClass("active");
 });
 
-/*************   jquery-ui (feedSort) */
+/*************   jquery-ui (feedSort) ***************/
 $(function () {
   $(".feedSort__select").selectmenu();
 });
@@ -182,9 +182,9 @@ $('.jobsSearches__item-img').click(function () {
 $(".chatNavbar__item").click(function () {
 
   var key = $(this).data('id');
-  var audio = $('[data-id=' + key + ']');
+  var Item = $('[data-id=' + key + ']');
 
-  audio.addClass('active').siblings().removeClass('active');
+  Item.addClass('active').siblings().removeClass('active');
 
 });
 
